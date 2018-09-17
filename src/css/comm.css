@@ -1,0 +1,45 @@
+/*
+Error: Invalid US-ASCII character "\xE7"
+        on line 27 of comm.scss
+
+22:     font-size: 12px !important; } } *\/
+23: 
+24: 
+25: @media screen and (min-width: 375px) {
+26:   html {
+27:     /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px *\/
+28:     font-size: calc(100% + 2 * (100vw - 375px) / 39);
+29:     font-size: calc(16px + 2 * (100vw - 375px) / 39);
+30:   }
+31: }
+32: @media screen and (min-width: 414px) {
+
+Backtrace:
+comm.scss:27
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1297:in `block in find_encoding_error'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each_with_index'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `find_encoding_error'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:905:in `check_sass_encoding'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:436:in `check_encoding!'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:392:in `_to_tree'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:22:in `load'
+/usr/local/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xE7\"\A         on line 27 of comm.scss\A \A 22:     font-size: 12px !important; } } */\A 23: \A 24: \A 25: @media screen and (min-width: 375px) {\A 26:   html {\A 27:     /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */\A 28:     font-size: calc(100% + 2 * (100vw - 375px) / 39);\A 29:     font-size: calc(16px + 2 * (100vw - 375px) / 39);\A 30:   }\A 31: }\A 32: @media screen and (min-width: 414px) {"; }
