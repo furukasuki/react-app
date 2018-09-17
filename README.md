@@ -1,5 +1,5 @@
 快速概述  
-已配置redux antd sass css modules 路由按需加载  
+已配置redux antd sass css modules react-router 4.0 路由按需加载  
 yarn/npm install  
 开启 npm/yarn start   
 打包 npm run build  
