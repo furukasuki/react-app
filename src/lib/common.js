@@ -26,7 +26,6 @@ export function Dynamic(url) {
     });
 }
 
-
 // fetch请求封装
 
 function form(value){
@@ -34,7 +33,7 @@ function form(value){
     Object.entries(value).map((k,v)=>{
         from.append(k, v)
         return from
-        // return 必须写在数组回调中
+
     })
 }
 

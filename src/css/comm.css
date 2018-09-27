@@ -1,45 +1,73 @@
+@charset "UTF-8";
+.fontSize {
+  color: red; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
 /*
-Error: Invalid US-ASCII character "\xE7"
-        on line 27 of comm.scss
+@media screen and (max-width: 816px) {
+  html, body {
+    font-size: 14px !important; } }
+@media screen and (max-width: 750px) {
+  html, body {
+    font-size: 12px !important; } } */
+.ant-layout-has-sider {
+  height: 100vh !important; }
 
-22:     font-size: 12px !important; } } *\/
-23: 
-24: 
-25: @media screen and (min-width: 375px) {
-26:   html {
-27:     /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px *\/
-28:     font-size: calc(100% + 2 * (100vw - 375px) / 39);
-29:     font-size: calc(16px + 2 * (100vw - 375px) / 39);
-30:   }
-31: }
-32: @media screen and (min-width: 414px) {
+.ant-layout-sider-children {
+  height: 100vh !important; }
 
-Backtrace:
-comm.scss:27
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1297:in `block in find_encoding_error'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each_with_index'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `find_encoding_error'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/util.rb:905:in `check_sass_encoding'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:436:in `check_encoding!'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:392:in `_to_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin.rb:82:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/bin/scss:13:in `<top (required)>'
-/usr/local/bin/scss:22:in `load'
-/usr/local/bin/scss:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid US-ASCII character \"\xE7\"\A         on line 27 of comm.scss\A \A 22:     font-size: 12px !important; } } */\A 23: \A 24: \A 25: @media screen and (min-width: 375px) {\A 26:   html {\A 27:     /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */\A 28:     font-size: calc(100% + 2 * (100vw - 375px) / 39);\A 29:     font-size: calc(16px + 2 * (100vw - 375px) / 39);\A 30:   }\A 31: }\A 32: @media screen and (min-width: 414px) {"; }
+@media screen and (min-width: 375px) {
+  html {
+    /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
+    font-size: calc(100% + 2 * (100vw - 375px) / 39);
+    font-size: calc(16px + 2 * (100vw - 375px) / 39); } }
+@media screen and (min-width: 414px) {
+  html {
+    /* 414px-1000px每100像素宽字体增加1px(18px-22px) */
+    font-size: calc(112.5% + 4 * (100vw - 414px) / 586);
+    font-size: calc(18px + 4 * (100vw - 414px) / 586); } }
+@media screen and (min-width: 600px) {
+  html {
+    /* 600px-1000px每100像素宽字体增加1px(20px-24px) */
+    font-size: calc(125% + 4 * (100vw - 600px) / 400);
+    font-size: calc(20px + 4 * (100vw - 600px) / 400); } }
+@media screen and (min-width: 1000px) {
+  html {
+    /* 1000px往后是每100像素0.5px增加 */
+    font-size: calc(137.5% + 6 * (100vw - 1000px) / 1000);
+    font-size: calc(22px + 6 * (100vw - 1000px) / 1000); } }
+@media screen and (min-width: 1400px) {
+  .connectMax {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=comm.css.map */

@@ -33,3 +33,9 @@ export function setInfoList (data) {
     }
 }
 
+export function setId(data) {
+    return (dispatch, getState) => {
+        dispatch({ type: 'SET_ID', data: data })
+    }
+}
+

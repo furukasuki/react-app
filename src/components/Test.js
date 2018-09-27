@@ -15,30 +15,6 @@ import { connect } from 'react-redux'
 import { setPageTitle, setInfoList } from '../store/action'
 
 
-const Item=()=>{
-
-    return(
-
-        <div>
-            <h1>App</h1>
-            <ul>
-                <li><Link to="/buttom">About</Link></li>
-            </ul>
-        </div>
-
-    )
-}
-
-
-const buttom=()=>{
-
-    return(
-        <div>
-            <button onClick={this.dj}>点击</button>
-        </div>
-    )
-
-}
 class Test extends Component {
     constructor(props) {
         super(props)
@@ -46,6 +22,7 @@ class Test extends Component {
 
     componentDidMount () {
         let { setPageTitle } = this.props
+        // console.log(this.props.setPageTitle('m1'))
     }
 
     dj=()=>{
@@ -53,13 +30,15 @@ class Test extends Component {
     }
 
     render () {
-       let {pageTitle}=this.props
+        let {pageTitle}=this.props
         // 使用store
         return (
             <div>
-                    <div>
-                        <h1>{pageTitle}</h1>
-                    </div>
+                <div>
+                    <h1>{pageTitle}</h1>
+                </div>
+
+                <div onClick={this.dj}>点击</div>
             </div>
         )
     }

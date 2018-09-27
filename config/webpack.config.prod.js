@@ -316,6 +316,11 @@ module.exports = {
                     },
                 ],
             },
+            {
+                test:[ /\.(mp4|3gp)$/, /\.json$/, /\.scss$/],
+                loader: require.resolve('file-loader'),
+            },
+
 
           // ** STOP ** Are you adding a new loader?
           // Make sure to add the new loader(s) before the "file" loader.

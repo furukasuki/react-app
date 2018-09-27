@@ -1,4 +1,5 @@
-$nav-color: #F90;
+@charset "UTF-8";
+$nav-color: red;
 .fontSize {
   color: $nav-color;
 }
@@ -22,6 +23,13 @@ abbr,acronym { border:0}
     font-size: 12px !important; } } */
 
 
+.ant-layout-has-sider{
+  height:100vh !important;
+}
+
+.ant-layout-sider-children{
+  height: 100vh !important;
+}
 @media screen and (min-width: 375px) {
   html {
     /* iPhone6的375px尺寸作为16px基准，414px正好18px大小, 600 20px */
